@@ -16,7 +16,7 @@ Triangulation of a polygon is a well studied problem. The best known algorithms 
 
 An ear vertex of a polygon is a vertex whose triangle with it's 2 neighbour vertices does not enclose any other vertex of the polygon. These vertices are used in the clipping algorithm as follows.
 * Classify each vertex of the polygon as either reflex, convex or ear vertex.
-For n-3 iterations, do the following
+For n-2 iterations, do the following
 * Pick an ear vertex at random, and it along with its 2 neighbours to the list of triangulated points.
 * Update the vertex status of each of it's neighbours
 * Repeat the above steps
