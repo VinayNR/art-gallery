@@ -32,6 +32,8 @@ Graph coloring is the process of coloring (or assigning a category) to each of t
 
 The traingulation of the polygon as described above, generates a chordal graph. Chordal graphs, are a class of graphs where in, if the graph consists of a cycle of length 4 or more nodes, then there will exist a chord in between them.
 
+![chordal](https://github.com/VinayNR/art-gallery/blob/main/coloring.png)
+
 #### Algorithm
 For the chordal graph obtained, we employ a perfect elimintaion ordering mechanism.
 * A random node is chosen as start node, and a random neighbour is chosen as well. The two nodes are colored using two available options.
@@ -42,13 +44,9 @@ The above Graph coloring of chordal graphs is done in $O(N+E)$ time.
 ## Variations
 The Art Gallery problem has many real world applications in the field of robotics and communications. For this reason, several extensions of the problem have been posed and studied in the last few decades. For instance, there have been variations such as the watchman route problem, which studies the shortest path a a guard has to take to cover the entire interior of the polygon. This problem has motivated many scientists to study properties of graphs and vertex sets such as dominating sets and independent sets. Another variation to the problem is that of an optimzation problem. The problem asks to find the least number of guards to place on the vertex set, such that a security score is maximized. The security score could be defined as a polynomial function such as the inverse of the distance between interior of points and the verices, or just the sum of vertices that are also endpoints of a visibility edge.
 
-## Steps
-Ear Clipping Algorithm for triangulating a simple polygon P
-The triangulated polygon is represented as a chordal graph
-Every chordal graph is 3-colorable in O(N) time, where N is the number of vertices.
 
 ## Usage
-Run the Jupyter notebook to view the results
+The jupyter notebook consists of classes for Polygon, Triangulation and Coloring. The execution cells draws a polygon and creates a triangulation of its vertices. The traingulated vertices are then converted to a graph, for which 3-coloring algorithm is applied. The 3-coloring of the graph generates independent sets of the graph vertices. We pick the smallest size of the 3 independent sets created to place the guards.
 
 ## Contact Information
 Email: <nrvinay08@gmail.com> and <k.rachna27@gmail.com>
